@@ -4,6 +4,7 @@
   (:use [noir.core :only [defpage]]
         [hiccup.core :only [html]]))
 
-(defpage "/welcome" []
+(defpage "/" []
          (common/layout
-           [:p "Welcome to reddit-notifier"]))
+           [:button#notify "Notify me"]
+           [:p "Watching /r/ruby..."]))
